@@ -1,65 +1,71 @@
-// function countTrue(arr) {
-//     let count = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//       if (arr[i] === true) {
-//         count++;
-//       }
-//     }
-//     return count;
-//   } //Create a function which returns the number of true values there are in an array
-//   console.log(countTrue([true, false, false, true, false])); // Output: 2
-// console.log(countTrue([false, false, false, false])); // Output: 0
-// console.log(countTrue([])); // Output: 0
+//console.log("hello edabit.com") //print 
 
-//   Write a function redundant that takes in a string str and returns a function that returns str.
-// function redundant(str) {
-//     return function() {
-//       return str;
-//     };
-//   }
 
-//   const f1 = redundant("apple");
-// console.log(f1());
 
-// const f2 = redundant("pear");
-// console.log(f2());
-// const f3 = redundant("");
-// console.log(f3());
-
-// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
-// function sevenBoom(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     const digits = String(arr[i]).split("");
-//     if (digits.includes("7")) {
-//       return "Boom!";
-//     }
-//   }
-//   return "there is no 7 in the array";
+// function circuitPower(voltage, current) { return (voltage* current )
 // }
-// console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
-// console.log(sevenBoom([8, 6, 33, 100]));
-// console.log(sevenBoom([2, 55, 60, 97, 86]));
+//calculation (voltage* current)
+// console.log(circuitPower(110*3));
+// console.log(circuitPower(480*20));
+// console.log(circuitPower(320*10));
 
 
-// Create a function that returns true if smaller arrays can concatenate to form the target array and false otherwise.
-// function canConcatenate(smallerArrays, targetArray) {
-//   const flattened = smallerArrays.flat();
-//   flattened.sort();
-//   targetArray.sort();
 
-//   if (flattened.length !== targetArray.length) {
-//     return false;
+// function cubes(a) {
+// 	return a ** 3
+// }
+// //calculation is Math.pow
+// console.log(cubes(3**3)); 
+// console.log(cubes(5**3)); 
+// console.log(cubes(10**3)); 
+
+
+// function convert(minutes) { 
+// 	return (minutes*60)
+// } //Write a function that takes an integer minutes and converts it to seconds.
+// console.log(convert(5*60));
+// console.log(convert(5*60));
+// console.log(convert(5*60));
+
+
+// function findPerimeter(length, width) {
+//     return (length + width) * 2;
+//   }// finds the perimeter of a rectangle.
+
+  
+//   console.log(findPerimeter(7, 6));
+//   console.log(findPerimeter(10, 20));
+//   console.log(findPerimeter(2, 9));
+
+
+
+
+// function giveMeSomething(a) {
+//     return "something " + a;
+//   } //returns the string "something" joined with a space " " and the given argument a.
+
+//   console.log(giveMeSomething("is better than nothing")); 
+//   console.log(giveMeSomething("Bob Jane")); 
+//   console.log(giveMeSomething("something")); 
+
+
+
+
+// function triArea(base, height) {
+//     return (base * height) / 2;
+//   } //calculation is area a triangle
+  
+//   console.log(triArea(2, 3));
+//   console.log(triArea(7, 4));
+//   console.log(triArea(10, 10));
+
+
+
+// function howManySeconds(hours) {
+//     return hours * 3600;
 //   }
-
-//   for (let i = 0; i < flattened.length; i++) {
-//     if (flattened[i] !== targetArray[i]) {
-//       return false;
-//     }
-//   }
-
-//   return true;
-// } 
-// console.log(canConcatenate([[1, 2, 3, 4], [5, 6], [7]], [1, 2, 3, 4, 5, 6, 7])); 
-// console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6]], [7, 6, 5, 4, 3, 2, 1])); 
-// console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6, 7]], [1, 2, 3, 4, 5, 6, 7])); 
-// console.log(canConcatenate([[2, 1, 3], [5, 4, 7]], [1, 2, 3, 4, 5, 6, 7])); 
+//   //Write a function that takes an integer hour and converts it to seconds
+  
+//   console.log(howManySeconds(2 * 60)); 
+//   console.log(howManySeconds(10 * 60)); 
+//   console.log(howManySeconds(24 * 60)); 
